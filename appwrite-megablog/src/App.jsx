@@ -2,8 +2,7 @@ import { useEffect, useState } from "react"
 import {useDispatch} from "react-redux"
 import authService from "./appwrite/auth"
 import { login, logout } from "./store/AuthSlice"
-import Header from "./Components/Header/Header"
-import Footer from "./Components/Footer/Footer"
+import { Header, Footer } from "./Components"
 import {Outlet} from "react-router-dom"
 function App() {
   const[loading, setLoading] = useState(true)
@@ -27,10 +26,10 @@ function App() {
       Mega Blog
       <div className="w-full block">
         <Header/>
-        <main >
+        {/* <main >
          Todo: <Outlet/>
-        </main>
-        <Footer/>        
+        </main> */}
+        {/* <Footer/>         */}
       </div>
 
     </div>
