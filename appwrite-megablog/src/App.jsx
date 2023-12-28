@@ -2,8 +2,8 @@ import { useEffect, useState } from "react"
 import {useDispatch} from "react-redux"
 import authService from "./appwrite/auth"
 import { login, logout } from "./store/AuthSlice"
-import { Header, Footer } from "./Components"
-import {Outlet} from "react-router-dom"
+// import { Header, Footer } from "./Components"
+// import {Outlet} from "react-router-dom"
 function App() {
   const[loading, setLoading] = useState(true)
   const dispatch = useDispatch()
@@ -21,19 +21,19 @@ function App() {
     .finally(()=>setLoading(false))
   },[])
 
-  return !loading ? (
+  return  (
     <div className="min-h-screen flex flex-wrap content-between bg-red-300">
       Mega Blog
-      <div className="w-full block">
-        <Header/>
-        {/* <main >
+      {/* <div className="w-full block">
+        {/* <Header/> }
+        <main >
          Todo: <Outlet/>
-        </main> */}
-        {/* <Footer/>         */}
-      </div>
+        </main>
+        <Footer/>        
+      </div> */}
 
     </div>
-  ) : null
+  )
 }
 
 export default App
