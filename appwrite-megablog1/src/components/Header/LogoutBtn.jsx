@@ -5,7 +5,7 @@ function LogoutBtn() {
     const dispatch = useDispatch();
     const logoutHandler = ()=>{
         authServices.logout()
-        .then(()=>dispatch(logout))
+        .then(()=>dispatch(logout()))
     }
   return (
     <button
