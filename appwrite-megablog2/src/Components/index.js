@@ -7,6 +7,8 @@ import Button from "./Button";
 import Logo from "./Logo";
 import Login from "./Login";
 import LogoutBtn from "./Header/LogoutBtn";
+import Rte from "./Rte";
+import Select from "./Select";
 
 export {
     Header,
@@ -17,5 +19,7 @@ export {
     Button,
     Logo,
     Login,
-    LogoutBtn
+    LogoutBtn,
+    Rte,
+    Select
 }

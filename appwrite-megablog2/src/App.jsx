@@ -5,6 +5,7 @@ function App() {
       <div>
         <Header/>
           <SignUp/>
+          
           <Login/>
         <Footer/>
       </div>
